@@ -51,7 +51,6 @@ Make sure to compile the mod files and also make an empty folder named
 LFPs in the directory. NEURON will save the calculated LFP files into
 this directory.
 
----
-
-Version update on 2022-05-17 to support compatibility with upcoming NEURON 9.0
-
+Changelog
+--------
+2022-05: Updated MOD files to contain valid C++ and be compatible with the upcoming versions 8.2 and 9.0 of NEURON.
