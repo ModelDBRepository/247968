@@ -16,7 +16,7 @@ with spatial gradients.
 This model has been developed using the NEURON simulator (Hines and
 Carnavale, 2008).
 
-Summary of files: 
+Summary of files:
 
 DATA INPUT FILES:
 spikesmatrix_op:   Stores spikes for each external connection (row); it needs to be used together with spikes_ind file
@@ -29,7 +29,7 @@ GAPid:            Indexes only used for gap junction transfer. Indexes here has 
 sim_length:        Simulation time length.
 location.txt:        Stores 3D coordinates (um) for each cell
 oritation.txt:        Stores dendrite orientations for each cell
-elec_coords.txt:     List electrode coordinates (um) to calculate LFPs. If interesting in multiple electrode recording, need to generate multiple electrode coordinates to write into this file. 
+elec_coords.txt:     List electrode coordinates (um) to calculate LFPs. If interesting in multiple electrode recording, need to generate multiple electrode coordinates to write into this file.
 NM.txt:           This file indicates whether the cell has any neuromodulator receptors present. It can be of three types, DA, NE and DANE. (has not been used in this study).
 NEURON FILES:
 - BL_main.hoc:       Main file to run the simulations
@@ -38,7 +38,7 @@ NEURON FILES:
 - function_ConnectInternal_gj_simplify: Establish gap coupling between FSIs with adjustable coupling strength parameters.
 - function_ConnectInternal_simplify_online_op.hoc: Establish internal connections with adjustable synapse weight parameters.
 - function_ConnectTwoCells.hoc: Procedure used to connect two internal neurons.
-- function_calcconduc: Function used to calculate conductances for being used to calculate LFPs. 
+- function_calcconduc: Function used to calculate conductances for being used to calculate LFPs.
 
 OUTPUT FILES:
 
@@ -50,3 +50,7 @@ BEFORE YOU RUN:
 Make sure to compile the mod files and also make an empty folder named
 LFPs in the directory. NEURON will save the calculated LFP files into
 this directory.
+
+Changelog
+--------
+2022-05: Updated MOD files to contain valid C++ and be compatible with the upcoming versions 8.2 and 9.0 of NEURON.
